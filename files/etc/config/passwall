@@ -67,20 +67,18 @@ config global_app
 
 config global_subscribe
 	option subscribe_proxy '0'
-	list filter_discard_list '杩囨湡鏃堕棿'
-	list filter_discard_list '鍓╀綑娴侀噺'
-	list filter_discard_list 'QQ缇?
-	list filter_discard_list '瀹樼綉'
+	list filter_discard_list '过期时间'
+	list filter_discard_list '剩余流量'
+	list filter_discard_list 'QQ群'
+	list filter_discard_list '官网'
 	option ss_aead_type 'shadowsocks-libev'
 	option trojan_type 'trojan-plus'
+	list filter_keep_list '韩国'
+	list filter_keep_list '美国'
+	list filter_keep_list '新加坡'
+	list filter_keep_list '日本'
+	list filter_keep_list '香港'
 	option filter_keyword_mode '2'
-	list filter_keep_list '涓撶嚎|闊╁浗'
-	list filter_keep_list '涓撶嚎|缇庡浗'
-	list filter_keep_list '涓撶嚎|鏂板姞鍧?
-	list filter_keep_list '涓撶嚎|鏃ユ湰'
-	list filter_keep_list '涓撶嚎|棣欐腐'
-	list filter_keep_list 'IPLC'
-	list filter_keep_list 'emby'
 
 config auto_switch
 	option enable '0'
@@ -90,7 +88,7 @@ config auto_switch
 	option shunt_logic '1'
 
 config nodes 'myshunt'
-	option remarks '鍒嗘祦鎬昏妭鐐?
+	option remarks '分流总节点'
 	option type 'Xray'
 	option protocol '_shunt'
 	option AD 'nil'
