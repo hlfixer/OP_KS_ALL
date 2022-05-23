@@ -63,9 +63,9 @@ config host
 	option leasetime 'infinite'
 
 config host
-	option name 'vivo'
+	option name 'Redmi_K50'
 	option dns '1'
-	option mac '70:78:8b:2f:94:40'
+	option mac '2e:f5:65:e0:cc:b4'
 	option ip '192.168.1.98'
 	option leasetime 'infinite'
 
