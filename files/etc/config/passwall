@@ -137,7 +137,6 @@ config shunt_rules 'China'
 config acl_rule
 	option enabled '1'
 	option remarks 'fq'
-	option sources '192.168.1.97-192.168.1.99'
 	option tcp_no_redir_ports 'default'
 	option udp_no_redir_ports 'default'
 	option tcp_proxy_drop_ports 'default'
@@ -148,11 +147,11 @@ config acl_rule
 	option udp_node 'default'
 	option tcp_proxy_mode 'chnroute'
 	option udp_proxy_mode 'chnroute'
+	option sources '192.168.1.97-192.168.1.99 00:c3:0a:e2:51:d0'
 
 config acl_rule
 	option enabled '1'
 	option remarks 'game'
-	option sources '192.168.1.95 192.168.1.96'
 	option tcp_no_redir_ports 'default'
 	option udp_no_redir_ports 'default'
 	option tcp_proxy_drop_ports 'default'
@@ -163,6 +162,7 @@ config acl_rule
 	option udp_node 'default'
 	option tcp_proxy_mode 'global'
 	option udp_proxy_mode 'global'
+	option sources '192.168.1.95 192.168.1.96'
 
 config socks '5c4d746c56dc44d0a86b7a54770879ea'
 	option enabled '1'
